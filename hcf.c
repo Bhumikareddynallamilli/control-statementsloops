@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+	int m,n, i,hcf=1,min;
+	scanf("%d%d",&m,&n);
+	min=m>n?n:m;
+	for(i=min; i>=1; i--)
+	{
+		if(m%i==0 && n%i==0)
+		{
+			hcf=i;
+			break;
+		}
+	}
+	printf("hcf=%d",hcf);
+	
+}
